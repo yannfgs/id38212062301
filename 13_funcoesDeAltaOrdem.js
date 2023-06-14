@@ -4,4 +4,9 @@ function saudacao(nome) {
     return `Olá, ${nome}!`;
 }
 
-function processarPessoa(nome, callback)
+function processarPessoa(nome, callback) {
+    let mensagem = callback(nome);
+    console.log(mensagem);
+}
+
+processarPessoa("João", saudacao); // Olá, João!
