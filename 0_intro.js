@@ -1,0 +1,1 @@
+// ARQUIVO DE ESTUDO JavaScript
