@@ -1,3 +1,5 @@
+// Promises
+
 let promise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('Promessa resolvida!');
