@@ -6,7 +6,7 @@
 // arquivo: worker.js
 self.addEventListener('message', function(e) {
     self.postMessage(e.data);
-} false);
+}, false);
 
 // arquivo principal
 let worker = new Worker('worker.js');
