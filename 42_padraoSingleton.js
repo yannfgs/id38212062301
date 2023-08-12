@@ -11,4 +11,7 @@ class Singleton {
     }
 }
 
-const 
+const instancia1 = new Singleton();
+const instancia2 = new Singleton();
+
+console.log(instancia1 === instancia2); // true
