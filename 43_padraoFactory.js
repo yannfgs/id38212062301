@@ -24,3 +24,9 @@ function AnimalFactory(tipo) {
             throw new Error("Tipo de animal desconhecido");
     }
 }
+
+let gato = AnimalFactory("Gato");
+console.log(gato.falar()); // "Miau!"
+
+let cachorro = AnimalFactory("Cachorro");
+console.log(cachorro.falar()) // "Au au!"
