@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador em JavaScript</title>
+</head>
+
+<body>
+    <!-- Mostra o valor atual do contador -->
+    <h1 id="valorContador">0</h1>
+
+    <!-- Botões para aumentar, diminuir e zerar o contador -->
+    <button onclick="alterarContador(1)">Aumentar</button> <!-- Botão para incrementar o contador -->
+    <button onclick="alterarContador(-1)">Diminuir</button> <!-- Botão para decrementar o contador -->
+    <button onclick="resetarContador()">Zerar</button> <!-- Botão para zerar o contador -->
+
+    <!-- Script JavaScript -->
+    <script>
+        var contador = 0;  // Variável para armazenar o valor do contador
+
+        // Função que altera o valor do contador
+        function alterarContador(valor) {
+            contador += valor; // Adiciona o valor fornecido ao contador
+            document.getElementById("valorContador").innerText = contador; // Atualiza o valor exibido na página
+        }
+
+        // Função para zerar o contador
+        function resetarContador() {
+            contador = 0; // Zera a variável do contador
+            document.getElementById("valorContador").innerText = contador; // Atualiza o valor exibido na página
+        }
+    </script>
+</body>
+
+</html>
