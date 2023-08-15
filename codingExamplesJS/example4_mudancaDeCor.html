@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudança de Cor com JavaScript</title>
+</head>
+
+<body>
+    <!-- Parágrafo cuja cor pode ser alterada -->
+    <p id="textoColorido">Este texto mudará de cor!</p>
+
+    <!-- Botões para alterar a cor do texto -->
+    <button onclick="mudarCor('red')">Vermelho</button> <!-- Botão para mudar a cor para vermelho -->
+    <button onclick="mudarCor('blue')">Azul</button> <!-- Botão para mudar a cor para azul -->
+    <button onclick="mudarCor('green')">Verde</button> <!-- Botão para mudar a cor para verde -->
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função que altera a cor do texto
+        function mudarCor(cor) {
+            document.getElementById("textoColorido").style.color = cor; // Altera a cor do elemento com id "textoColorido"
+        }
+    </script>
+</body>
+
+</html>
