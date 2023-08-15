@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio em Tempo Real com JavaScript</title>
+</head>
+
+<body>
+    <!-- Mostra a hora atual -->
+    <h1 id="relogio">00:00:00</h1>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para atualizar e exibir a hora atual
+        function mostrarHora() {
+            var dataAtual = new Date(); // Obtém a data e hora atuais
+            var horas = dataAtual.getHours();  // Obtém as horas
+            var minutos = dataAtual.getMinutes();  // Obtém os minutos
+            var segundos = dataAtual.getSeconds();  // Obtém os segundos
+
+            // Adiciona um zero à esquerda se as horas, minutos ou segundos forem menores que 10
+            horas = horas < 10 ? '0' + horas : horas;
+            minutos = minutos < 10 ? '0' + minutos : minutos;
+            segundos = segundos < 10 ? '0' + segundos : segundos;
+
+            document.getElementById("relogio").innerText = horas + ":" + minutos + ":" + segundos;  // Atualiza o texto com a hora atual
+        }
+
+        // Chama a função mostrarHora a cada segundo
+        setInterval(mostrarHora, 1000);
+    </script>
+</body>
+
+</html>
