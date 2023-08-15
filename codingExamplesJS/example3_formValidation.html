@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário em JavaScript</title>
+</head>
+
+<body>
+    <!-- Formulário simples com campos de nome e email -->
+    <form onsubmit="return validateForm()" action="#">
+        <input type="text" id="name" placeholder="Digite seu nome"> <!-- Campo para inserir o nome -->
+        <input type="email" id="email" placeholder="Digite seu email"> <!-- Campo para inserir o e-mail -->
+        <button type="submit">Enviar</button> <!-- Botão de envio -->
+        <p id="errorMessage"></p> <!-- Local para exibir mensagens de erro -->
+    </form>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para validar o formulário
+        function validateForm() {
+            var name = document.getElementById("name").value; // Obtém o valor do campo nome
+            var email = document.getElementById("email").value; // Obtém o valor do campo email
+
+            // Verifica se o nome ou email estão vazios
+            if (!name || !email) {
+                document.getElementById("errorMessage").innerText = "Os campos nome e email são obrigatórios!"; // Exibe mensagem de erro
+                return false; // Impede o envio do formulário
+            }
+
+            return true; // Permite o envio do formulário se tudo estiver correto
+        }
+    </script>
+</body>
+
+</html>
