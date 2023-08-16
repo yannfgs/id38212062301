@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com o Usuário em JavaScript</title>
+</head>
+
+<body>
+    <!-- Botão para solicitar o nome do usuário -->
+    <button onclick="solicitarNome()">Qual é o seu nome?</button>
+
+    <!-- Mostra uma mensagem personalizada para o usuário -->
+    <p id="mensagemUsuario"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para solicitar o nome do usuário e exibir uma mensagem personalizada
+        function solicitarNome() {
+            var nome = prompt("Digite seu nome:");  // Solicita o nome do usuário
+            if (nome) { // Verifica se um nome foi fornecido
+                document.getElementById("mensagemUsuario").innerText = "Olá, " + nome + "! Bem-vindo(a) ao nosso site.";  // Exibe uma mensagem personalizada
+            } else {
+                document.getElementById("mensagemUsuario").innerText = "Olá, visitante! Bem-vindo(a) ao nosso site."; // Exibe uma mensagem genérica
+            }
+        }
+    </script>
+</body>
+
+</html>
