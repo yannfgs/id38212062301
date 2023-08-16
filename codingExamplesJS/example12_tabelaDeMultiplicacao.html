@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Multiplicação com JavaScript</title>
+</head>
+
+<body>
+    <table border="1" id="tabelaMultiplicacao"> <!-- Tabela para exibir a multiplicação -->
+        <!-- Conteúdo da tabela será preenchido com JavaScript -->
+    </table>
+
+    <!-- Script JavaScript -->
+    <script>
+        var tabela = document.getElementById("tabelaMultiplicacao"); // Obtém a tabela
+
+        // Loop para criar as linhas e colunas da tabela de multiplicação
+        for (var i = 1; i <= 10; i++) {
+            var linha = tabela.insertRow(); // Insere uma nova linha na tabela
+            for (var j = 1; j <= 10; j++) {
+                var celula = linha.insertCell(); // Insere uma nova célula na linha
+                celula.innerText = i * j;  // Define o texto da célula como o produto de i e j
+            }
+        }
+    </script>
+</body>
+
+</html>
