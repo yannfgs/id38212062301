@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica com JavaScript</title>
+</head>
+
+<body>
+    <!-- Elementos da calculadora -->
+    <input type="number" id="numero1"> <!-- Campo para inserir o primeiro número -->
+    <select id="operacao"> <!-- Caixa de seleção para escolher a operação -->
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+    <input type="number" id="numero2"> <!-- Campo para inserir o segundo número -->
+    <button onclick="calcular()">Calcular</button> <!-- Botão para executar o cálculo -->
+    <p id="resultado">Resultado: </p> <!-- Mostra o resultado do cálculo -->
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para executar o cálculo
+        function calcular() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);  // Obtém o primeiro número
+            var operacao = document.getElementById("operacao").value;  // Obtém a operação selecionada
+            var numero2 = parseFloat(document.getElementById("numero2").value);  // Obtém o segundo número
+            var resultado;
+
+            // Determina a operação a ser realizada com base na seleção
+            switch (operacao) {
+                case "add":
+                    resultado = numero1 + numero2;
+                    break;
+                case "subtract":
+                    resultado = numero1 - numero2;
+                    break;
+                case "multiply":
+                    resultado = numero1 * numero2;
+                    break;
+                case "divide":
+                    resultado = numero1 / numero2;
+                    break;
+            }
+
+            // Exibe o resultado
+            document.getElementById("resultado").innerText = "Resultado: " + resultado;
+        }
+    </script>
+</body>
+
+</html>
