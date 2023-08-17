@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Imagens com JavaScript</title>
+    <style>
+        #slider img {
+            width: 300px;
+            height: 200px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Slider de imagens -->
+    <div id="slider">
+        <img src="imagem1.jpg" alt="Imagem 1">
+        <img src="imagem2.jpg" alt="Imagem 2">
+        <img src="imagem3.jpg" alt="Imagem 3">
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+        var imagens = document.querySelectorAll("#slider img");  // Obtém todas as imagens do slider
+        var indiceAtual = 0;
+
+        // Mostra a primeira imagem
+        imagens[indiceAtual].style.display = "block";
+
+        // Função para mudar para a próxima imagem
+        function proximaImagem() {
+            imagens[indiceAtual].style.display = "none";  // Esconde a imagem atual
+            indiceAtual = (indiceAtual + 1) % imagens.length;  // Move para a próxima imagem
+            imagens[indiceAtual].style.display = "block";  // Mostra a próxima imagem
+        }
+
+        // Muda para a próxima imagem a cada 2 segundos
+        setInterval(proximaImagem, 2000);
+    </script>
+</body>
+
+</html>
