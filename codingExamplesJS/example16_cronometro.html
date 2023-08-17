@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro com JavaScript</title>
+</head>
+
+<body>
+    <!-- Mostra o tempo do cronômetro -->
+    <span id="minutos">00</span>:<span id="segundos">00</span>:<span id="milissegundos">00</span>
+    <button onclick="iniciarCronometro()">Iniciar</button>
+    <button onclick="pararCronometro()">Parar</button>
+    <button onclick="resetarCronometro()">Resetar</button>
+
+    <!-- Script JavaScript -->
+    <script>
+        var milissegundos = 0;
+        var segundos = 0;
+        var minutos = 0;
+        var intervalo;
+
+        // Função para atualizar o cronômetro
+        function atualizarCronometro() {
+            milissegundos++;
+
+            if (milissegundos === 100) {
+                milissegundos = 0;
+                segundos++;
+            }
+
+            if (segundos === 60) {
+                segundos = 0;
+                minutos++;
+            }
+
+            document.getElementById("milissegundos").innerText = milissegundos < 10 ? "0" + milissegundos : milissegundos;
+            document.getElementById("segundos").innerText = segundos < 10 ? "0" + segundos : segundos;
+            document.getElementById("minutos").innerText = minutos < 10 ? "0" + minutos : minutos;
+        }
+
+        // Função para iniciar o cronômetro
+        function iniciarCronometro() {
+            intervalo = setInterval(atualizarCronometro, 10);
+        }
+
+        // Função para parar o cronômetro
+        function pararCronometro() {
+            clearInterval(intervalo);
+        }
+
+        // Função para resetar o cronômetro
+        function resetarCronometro() {
+            pararCronometro();
+            milissegundos = 0;
+            segundos = 0;
+            minutos = 0;
+            document.getElementById("milissegundos").innerText = "00";
+            document.getElementById("segundos").innerText = "00";
+            document.getElementById("minutos").innerText = "00";
+        }
+    </script>
+</body>
+
+</html>
