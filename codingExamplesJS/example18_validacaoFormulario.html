@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário com JavaScript</title>
+</head>
+
+<body>
+    <!-- Formulário para validação -->
+    <form id="formularioValidacao" onsubmit="return validarFormulario()">
+        <label for="email">E-mail:</label>
+        <input type="email" id="emailValidacao" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senhaValidacao" required>
+        <input type="submit" value="Enviar">
+        <p id="mensagemErro"></p>
+    </form>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para validar o formulário
+        function validarFormulario() {
+            var email = document.getElementById("emailValidacao").value;
+            var senha = document.getElementById("senhaValidacao").value;
+
+            // Verifica se o e-mail tem o formato correto
+            var regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!regexEmail.test(email)) {
+                document.getElementById("mensagemErro").innerText = "Por favor, insira um e-mail válido.";
+                return false;
+            }
+
+            // Verifica se a senha tem pelo menos 6 caracteres
+            if (senha.length < 6) {
+                document.getElementById("mensagemErro").innerText = "A senha deve ter pelo menos 6 caracteres.";
+                return false;
+            }
