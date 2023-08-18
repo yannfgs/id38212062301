@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +16,34 @@
         }
     </style>
 </head>
+
 <body>
     <div id="objetoAnimado"></div>
 
     <!-- Script JavaScript -->
     <script>
         var objeto = document.getElementById("objetoAnimado");
+        var posicao = 0;
+        var movendoDireita = true;
+
+        // Função para animar o movimento do objeto
+        function animarMovimento() {
+            if (movendoDireita && posicao == 350) {
+                movendoDireita = false;
+            } else if (!movendoDireita && posicao == 0) {
+                movendoDireita = true;
+            }
+
+
+            posicao = movendoDireita ? posicao + 5 : posicao - 5;
+
+            objeto.style.left = posicao + "px";
+        }
+
+        // Anima o objeto a cada 20 milissegundos
+        setInterval(animarMovimento, 20);
     </script>
 
 </body>
+
 </html>
