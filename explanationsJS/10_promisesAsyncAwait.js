@@ -11,7 +11,7 @@ promise.then(message => {
 });
 
 // Aysnc/Await
-async function exemploAsyncAwait () {
+async function exemploAsyncAwait() {
     let message = await promise;
     console.log(message); // "Promessa cumprida!"
 }
