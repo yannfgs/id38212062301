@@ -4,6 +4,6 @@
 let numeros = [1, 2, 3, 4, 5];
 console.log(numeros[0]); // 1
 
-let misto = [1, "dois", false, {nome: "João"}, [5, 6, 7]];
+let misto = [1, "dois", false, { nome: "João" }, [5, 6, 7]];
 console.log(misto[3].nome); // João
 
