@@ -5,7 +5,7 @@
 
 let botao = document.getElementById("meuBotao"); // obtém o elemento com o id "meuBotao"
 
-botao.addEventListener("click", function() {
+botao.addEventListener("click", function () {
     alert("Você clicou no botão!");
 });
 
