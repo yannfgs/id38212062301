@@ -5,7 +5,7 @@ function Pessoa(nome, idade) {
     this.idade = idade;
 }
 
-Pessoa.prototype.saudacao = function() {
+Pessoa.prototype.saudacao = function () {
     return `Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`;
 }
 
