@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda com JavaScript</title>
+</head>
+<body>
+    <input type="number" id="valor" placeholder="Valor em Reais">
+    <button onclick="converterParaDolar()">Converter para Dólar</button>
+    <p id="valorConvertido"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        var taxaConversaoDolar = 5.20; // Supondo uma taxa de conversão fixa para simplificar
+
+        // Função para converter o valor em reais para dólar
+        function converterParaDolar() {
+            var valorReais = parseFloat(document.getElementById("valor").value);
+            var valorDolar = valorReais / taxaConversaoDolar;
+            document.getElementById("valorConvertido").innerText = "Valor em Dólar: $" + valorDolar.toFixed(2);
+        }
+    </script>
+</body>
+</html>
