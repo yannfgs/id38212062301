@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Dinâmica com JavaScript</title>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="number" id="idade" placeholder="Idade">
+    <button onclick="adicionarLinha()">Adicionar</button>
+    <table border="1" id="tabelaDinamica">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para adicionar uma linha à tabela
+        function adicionarLinha() {
+            var nome = document.getElementById("nome").value;
+            var idade = document.getElementById("idade").value;
+
+            var tabela = document.getElementById("tabelaDinamica").getElementsByTagName("tbody")[0];
+            var novaLinha = tabela.insertRow(tabela.rows.length);
+
+            var celulaNome = novaLinha.insertCell(0);
+            var celulaIdade = novaLinha.insertCell(1);
+
+            celulaNome.innerHTML = nome;
+            celulaIdade.innerHTML = idade;
+        }
+    </script>
+</body>
+</html>
