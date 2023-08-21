@@ -10,6 +10,16 @@
     <button onclick="adicionarItem()">Adicionar</button>
     <ul id="listaCompras"></ul>
 
-    
+    <!-- Script JavaScript -->
+    <script>
+        // Função para adicionar um item à lista de compras
+        function adicionarItem() {
+            var item = document.getElementById("item").value;
+            var lista = document.getElementById(listaCompras);
+            var novoItem = document.createElement("li");
+            novoItem.innerText = item;
+            lista.appendChild(novoItem);
+        }
+    </script>
 </body>
 </html>
