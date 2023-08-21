@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres com JavaScript</title>
+</head>
+<body>
+    <textarea id="texto" onkeyup="contarCaracteres()"></textarea>
+    <p id="contagem">- caracteres</p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para contar os caracteres do texto inserido
+        function contarCaracteres() {
+            var texto = document.getElementById("texto").value;
+            var quantidade = texto.length;
+            document.getElementById("contagem").innerText = quantidade + " caracteres";
+        }
+    </script>
+</body>
+</html>
