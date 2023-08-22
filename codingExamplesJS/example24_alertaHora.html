@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Hora com JavaScript</title>
+</head>
+<body>
+    <button onclick="mostrarHora()">Mostrar Hora Atual</button>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para mostrar a hora atual em um alerta
+        function mostrarHora() {
+            var dataAtual = new Date();
+            var hora = dataAtual.getHours();
+            var minutos = dataAtual.getMinutes();
+            var segundos = dataAtual.getSeconds();
+            alert("Hora atual: " + hora + ":" + minutos + ":" + segundos);
+        }
+    </script>
+</body>
+</html>
