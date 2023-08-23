@@ -4,17 +4,16 @@
 
 const MeuModulo = (() => {
     let privado = "Variável privada";
-  
+
     function metodoPrivado() {
-      console.log(privado);
+        console.log(privado);
     }
-  
+
     return {
-      metodoPublico: () => {
-        metodoPrivado();
-      }
+        metodoPublico: () => {
+            metodoPrivado();
+        }
     };
-  })();
-  
-  MeuModulo.metodoPublico(); // "Variável privada"
-  
+})();
+
+MeuModulo.metodoPublico(); // "Variável privada"
