@@ -4,14 +4,14 @@
 
 
 // arquivo: worker.js
-self.addEventListener('message', function(e) {
+self.addEventListener('message', function (e) {
     self.postMessage(e.data);
 }, false);
 
 // arquivo principal
 let worker = new Worker('worker.js');
 
-worker.addEventListener('message', function(e) {
+worker.addEventListener('message', function (e) {
     console.log('Worker disse: ' + e.data);
 }, false);
 
