@@ -4,7 +4,7 @@
 
 let target = {};
 let handler = {
-    get: function(target, prop, receiver) {
+    get: function (target, prop, receiver) {
         console.log(`GET ${prop}`);
         return Reflect.get
     }
