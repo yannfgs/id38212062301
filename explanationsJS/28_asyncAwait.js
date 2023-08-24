@@ -11,7 +11,7 @@ fetchDados();
 
 
 
-// Async/Await é uma funcionalidade da linguagem de programação JavaScript que permite que as funções assíncronas sejam escritas de forma mais clara e legível, sem a necessidade de aninhar callbacks. 
+// Async/Await é uma funcionalidade da linguagem de programação JavaScript que permite que as funções assíncronas sejam escritas de forma mais clara e legível, sem a necessidade de aninhar callbacks.
 
 // Funções assíncronas são aquelas que executam tarefas que podem levar algum tempo para serem concluídas, como por exemplo fazer uma requisição HTTP. Ao invés de bloquear o fluxo do programa enquanto espera a resposta da requisição, as funções assíncronas permitem que o programa continue executando outras tarefas enquanto aguarda a resposta.
 
