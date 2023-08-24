@@ -7,6 +7,6 @@ console.log(1 + "-2"); // -1 (coerção de string para número)
 
 if (" ") {
     console.log("Espaços são truthy");
-}   else {
+} else {
     console.log("Espaços são falsy");
 }
