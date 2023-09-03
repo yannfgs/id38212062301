@@ -4,13 +4,12 @@
 
 
 function Pessoa(nome) {
-    this.nome = nome;
-  }
-  
-  Pessoa.prototype.cumprimentar = function() {
-    return "Olá, " + this.nome + "!";
-  };
-  
-  let joao = new Pessoa("João");
-  console.log(joao.cumprimentar()); // "Olá, João!"
-  
+  this.nome = nome;
+}
+
+Pessoa.prototype.cumprimentar = function () {
+  return "Olá, " + this.nome + "!";
+};
+
+let joao = new Pessoa("João");
+console.log(joao.cumprimentar()); // "Olá, João!"
