@@ -6,29 +6,28 @@
 // Função debounce
 function debounce(func, delay) {
     let debounceTimer;
-    return function(...args) {
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(() => func.apply(this, args), delay);
+    return function (...args) {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => func.apply(this, args), delay);
     };
-  }
-  
-  const minhaFuncao = debounce(() => {
+}
+
+const minhaFuncao = debounce(() => {
     console.log("Função executada após 300ms");
-  }, 300);
-  
-  // Função throttle
-  function throttle(func, limit) {
+}, 300);
+
+// Função throttle
+function throttle(func, limit) {
     let inThrottle;
-    return function(...args) {
-      if (!inThrottle) {
-        func.apply(this, args);
-        inThrottle = true;
-        setTimeout(() => (inThrottle = false), limit);
-      }
+    return function (...args) {
+        if (!inThrottle) {
+            func.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => (inThrottle = false), limit);
+        }
     };
-  }
-  
-  const minhaFuncaoThrottle = throttle(() => {
+}
+
+const minhaFuncaoThrottle = throttle(() => {
     console.log("Função executada no máximo uma vez a cada 300ms");
-  }, 300);
-  
+}, 300);
