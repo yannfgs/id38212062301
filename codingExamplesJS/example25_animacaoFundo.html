@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação de Fundo com JavaScript</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alterarCorFundo()">Alterar Cor do Fundo</button>
+    <!-- Script JavaScript -->
+    <script>
+        var cores = ['red', 'blue', 'green', 'yellow', 'orange'];
+        var indiceAtual = 0;
+
+        // Função para alterar a cor de fundo
+        function alterarCorFundo() {
+            document.body.style.backgroundColor = cores[indiceAtual];
+            indiceAtual = (indiceAtual + 1) % cores.length;
+        }
+    </script>
+</body>
+</html>
