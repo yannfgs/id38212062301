@@ -8,9 +8,8 @@ function* geradora() {
     yield 'valor 1';
     yield 'valor 2';
     yield 'valor 3';
-  }
-  
-  const g = geradora();
-  console.log(g.next().value); // "valor 1"
-  console.log(g.next().value); // "valor 2"
-  
+}
+
+const g = geradora();
+console.log(g.next().value); // "valor 1"
+console.log(g.next().value); // "valor 2"
