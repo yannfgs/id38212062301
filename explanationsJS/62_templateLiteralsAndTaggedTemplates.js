@@ -8,8 +8,8 @@ const nome = "João";
 const saudacao = `Olá ${nome}, como você está?`;
 
 function tag(strings, ...valores) {
-  console.log(strings);
-  console.log(valores);
+    console.log(strings);
+    console.log(valores);
 }
 
 tag`Olá ${nome}, como você está?`;
