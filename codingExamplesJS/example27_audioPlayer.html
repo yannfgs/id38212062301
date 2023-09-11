@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reprodutor de Áudio com JavaScript</title>
+</head>
+<body>
+    <audio id="meuAudio">
+        <source src="path_to_audio_file.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+
+    <!-- Script JavaScript -->
+    <script>
+        var audio = document.getElementById("meuAudio");
+
+        // Função para reproduzir o áudio
+        function playAudio() {
+            audio.play();
+        }
+
+        // Função para pausar o áudio
+        function pauseAudio() {
+            audio.pause();
+        }
+    </script>
+</body>
+</html>
