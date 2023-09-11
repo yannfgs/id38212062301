@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Seletiva com JavaScript</title>
+</head>
+<body>
+    <input type="text" id="termoBusca" onkeyup="filtrarLista()">
+    <ul id="lista">
+        <li>Maçã</li>
+        <li>Banana</li>
+        <li>Laranja</li>
+        <li>Manga</li>
+        <li>Goiaba</li>
+    </ul>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para filtrar itens da lista com base no termo de busca
+        function filtrarLista() {
+            var termo = document.getElementById("termoBusca").value.toLowerCase();
+            var itens = document.getElementById("lista").getElementsByTagName("li");
+
+            for (var i = 0; i < itens.length; i++) {
+                if (itens[i].innerText.toLowerCase().includes(termo)) {
+                    itens[i].style.display = "";
+                } else {
+                    itens[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
