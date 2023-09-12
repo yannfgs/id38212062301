@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validação de Formulário com JavaScript</title>
 </head>
+
 <body>
     <form id="meuForm">
         <input type="text" id="nome" placeholder="Nome" required>
@@ -15,7 +17,7 @@
 
     <!-- Script JavaScript -->
     <script>
-        document.getElementById("meuForm").addEventListener("submit", function(event) {
+        document.getElementById("meuForm").addEventListener("submit", function (event) {
             event.preventDefault();
 
             var nome = document.getElementById("nome").value;
@@ -29,4 +31,5 @@
         });
     </script>
 </body>
+
 </html>
