@@ -1,4 +1,5 @@
 // Async/Await
+
 // Async/await é uma maneira  de lidar com operações assíncronas em JavaScript. É baseado em Promises, mas tem uma sintaxe mais limpa e é mais fácil de entender e usar.
 
 async function fetchDados() {
