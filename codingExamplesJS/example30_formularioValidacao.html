@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário com JavaScript</title>
+</head>
+<body>
+    <form id="meuForm">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagemForm"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        document.getElementById("meuForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+
+            if (nome && email) {
+                document.getElementById("mensagemForm").innerText = "Formulário enviado com sucesso!";
+            } else {
+                document.getElementById("mensagemForm").innerText = "Preencha todos os campos.";
+            }
+        });
+    </script>
+</body>
+</html>
