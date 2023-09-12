@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login com Validação JavaScript</title>
+</head>
+<body>
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="validarLogin()">Entrar</button>
+    <p id="mensagem"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        var usuarioCorreto = "admin";
+        var senhaCorreta = "1234";
+
+        // Função para validar o login
+        function validarLogin() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+
+            if (usuario === usuarioCorreto && senha === senhaCorreta) {
+                document.getElementById("mensagem").innerText = "Login realizado com sucesso!";
+            } else {
+                document.getElementById("mensagem").innerText = "Usuário ou senha incorretos.";
+            }
+        }
+    </script>
+</body>
+</html>
