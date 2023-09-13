@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronômetro com JavaScript</title>
+</head>
+<body>
+    <button onclick="iniciarCronometro()">Iniciar</button>
+    <button onclick="pararCronometro()">Parar</button>
+    <p id="tempo">0 segundos</p>
+
+    <!-- Script JavaScript -->
+    <script>
+        var segundos = 0;
+        var cronometro;
+
+        // Função para iniciar o cronômetro
+        function iniciarCronometro() {
+            cronometro = setInterval(function() {
+                segundos++;
+                document.getElementById("tempo").innerText = segundos + " segundos";
+            }, 1000);
+        }
+
+        // Função para parar o cronômetro
+        function pararCronometro() {
+            clearInterval(cronometro);
+        }
+    </script>
+</body>
+</html>
