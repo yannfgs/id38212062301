@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples com JavScript</title>
+</head>
+<body>
+    <input type="number" id="numero1" placeholder="Número 1">
+    <input type="number" id="numero2" placeholder="Número 2">
+    <button onclick="calcularSoma()">Somar</button>
+    <p id="resultadoSoma"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para calcular a soma dos dois números
+        function calcularSoma() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var soma = numero1 + numero2;
+            document.getElementById("resultadoSoma").innerText = "Resultado da soma:" + soma;
+        }
+    </script>
+
+</body>
+</html>
