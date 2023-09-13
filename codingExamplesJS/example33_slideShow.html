@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide Show com JavaScript</title>
 </head>
+
 <body>
     <img id="imagemSlide" width="300px">
     <button onclick="iniciarSlideShow()">Iniciar</button>
@@ -16,11 +18,12 @@
 
         // Função para iniciar o slide show
         function iniciarSlideShow() {
-            setInterval(function() {
+            setInterval(function () {
                 document.getElementById("imagemSlide").src = imagens[indiceImagem];
                 indiceImagem = (indiceImagem + 1) % imagens.length;
             }, 2000);
         }
     </script>
 </body>
+
 </html>
