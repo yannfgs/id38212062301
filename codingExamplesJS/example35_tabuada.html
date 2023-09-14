@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada com JavaScript</title>
+</head>
+
+<body>
+    <input type="number" id="numeroParaTabuada" placeholder="Número para tabuada">
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+    <div id="resultadoTabuada"></div>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para gerar a tabuada do número inserido
+        function gerarTabuada() {
+            var numero = parseInt(document.getElementById("numeroParaTabuada").value);
+            var resultado = '';
+            for (var i = 1; i <= 10; i++) {
+                resultado += numero + " x " + i + " = " + (numero * i) + "<br>";
+            }
+            document.getElementById("resultadoTabuada").innerHTML = resultado;
+        }
+    </script>
+</body>
+
+</html>
