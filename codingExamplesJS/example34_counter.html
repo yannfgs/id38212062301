@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador Simples com JavaScript</title>
+</head>
+<body>
+    <button onclick="incrementarContador()">Incrementar</button>
+    <button onclick="decrementarContador()">Decrementar</button>
+    <p id="contador">0</p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Inicializa o contador com 0
+        var valorContador = 0;
+
+        // Função para incrementar o contador
+        function incrementarContador() {
+            valorContador++;
+            document.getElementById("contador").innerText = valorContador;
+        }
+
+        // Função para decrementar o contador
+        function decrementarContador() {
+            valorContador--;
+            document.getElementById("contador").innerText = valorContador;
+        }
+    </script>
+</body>
+</html>
