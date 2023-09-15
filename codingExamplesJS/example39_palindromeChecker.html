@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Palíndromo com JavaScript</title>
+</head>
+<body>
+    <input type="text" id="texto" placeholder="Insira um texto">
+    <button onclick="verificarPalindromo()">Verificar</button>
+    <p id="mensagemVerificacao"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para verificar se o texto é um palíndromo
+        function verificarPalindromo() {
+            var texto = document.getElementById("texto").value;
+            var textoReverso = texto.split('').reverse().join('');
+            var mensagem = (texto === textoReverso) ? "O texto é um palíndromo" : "O texto não é um palíndromo";
+            document.getElementById("mensagemVerificacao").innerText = mensagem;
+        }
+    </script>
+</body>
+</html>
