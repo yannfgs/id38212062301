@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperatura com JavaScript</title>
+</head>
+<body>
+    <input type="number" id="temperaturaCelsius" placeholder="Temperatura em Celsius">
+    <button onclick="converterParaFahrenheit()">Converter para Fahrenheit</button>
+    <p id="resultadoConversaoTemperatura"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para converter temperatura de Celsius para Fahrenheit
+        function converterParaFahrenheit() {
+            var temperaturaCelsius = parseFloat(document.getElementById("temperaturaCelsius").value);
+            var temperaturaFahrenheit = (temperaturaCelsius * 9/5) + 32;
+            document.getElementById("resultadoConversaoTemperatura").innerText = "Temperatura em Fahrenheit: " + temperaturaFahrenheit.toFixed(2);
+        }
+    </script>
+</body>
+</html>
