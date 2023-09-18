@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alternar Modo Escuro com JavaScript</title>
+    <style>
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alternarModoEscuro()">Modo Escuro</button>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para alternar o modo escuro
+        function alternarModoEscuro() {
+            var corpoDocumento = document.body;
+            corpoDocumento.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
