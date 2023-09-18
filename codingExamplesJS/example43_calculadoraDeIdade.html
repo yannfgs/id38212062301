@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Idade com JavaScript</title>
+</head>
+<body>
+    <input type="date" id="dataNascimento" placeholder="Data de nascimento">
+    <button onclick="calcularIdade()">Calcular Idade</button>
+    <p id="resultadoIdade"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para calcular a idade com base na data de nascimento
+        function calcularIdade() {
+            var dataNascimento = new Date(document.getElementById("dataNascimento").value);
+            var dataAtual = new Date();
+            var idade = dataAtual.getFullYear() - dataNascimento.getFullYear();
+            document.getElementById("resultadoIdade").innerText = "Sua idade é: " + idade;
+        }
+    </script>
+</body>
+</html>
