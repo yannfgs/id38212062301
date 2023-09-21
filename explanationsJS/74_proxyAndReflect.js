@@ -4,7 +4,7 @@
 
 const alvo = {};
 const manipulador = {
-    get: function(obj, prop) {
+    get: function (obj, prop) {
         return prop in obj ? obj[prop] : "Valor padrão";
     }
 }
