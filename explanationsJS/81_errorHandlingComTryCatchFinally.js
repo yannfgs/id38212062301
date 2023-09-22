@@ -4,8 +4,8 @@
 
 try {
     throw new Error('Um erro ocorreu');
-  } catch (erro) {
+} catch (erro) {
     console.error(erro.message);
-  } finally {
+} finally {
     console.log('Finalizando execução');
-  }  
+}  
