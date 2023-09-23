@@ -4,9 +4,8 @@
 
 class MinhaClasse {
     static metodoEstatico() {
-      return 'Método estático foi chamado';
+        return 'Método estático foi chamado';
     }
-  }
-  
-  console.log(MinhaClasse.metodoEstatico());
-  
+}
+
+console.log(MinhaClasse.metodoEstatico());
