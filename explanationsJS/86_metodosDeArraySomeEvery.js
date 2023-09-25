@@ -13,3 +13,5 @@ console.log(todosMaiorQue0);  // true
 const algumMaiorQue6 = array.some(num => num > 6);
 console.log(algumMaiorQue6); // false
 
+const todosMenoresQue4 = array.every(num => num < 4);
+console.log(todosMenoresQue4); // false
