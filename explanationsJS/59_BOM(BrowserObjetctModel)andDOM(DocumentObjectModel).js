@@ -1,4 +1,5 @@
-// BOM (Browser Object Model) e DOM (Document Object Model)
+// BOM e DOM
+// (Browser Object Model) (Document Object Model)
 
 // O BOM permite que o JavaScript "fale" com o navegador, enquanto o DOM permite que o JavaScript "fale" com o HTML. O BOM e o DOM são APIs do navegador, e não fazem parte do JavaScript em si.
 
