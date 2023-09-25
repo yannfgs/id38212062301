@@ -1,5 +1,6 @@
 // ARQUIVO DE ESTUDO JavaScript
 
+// Códigos de Estudo JS
 
 // Prompts que você pode usar para aprender JavaScript e alguns tópicos relacionados:
 
@@ -23,3 +24,4 @@
 // Como você renderizaria uma variável JavaScript em uma visualização EJS?
 // Crie um exemplo simples de um aplicativo Express.js que usa EJS como mecanismo de visualização.
 // Como você usaria condicionais e loops em EJS? Escreva um exemplo de código.
+
