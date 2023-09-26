@@ -4,21 +4,21 @@
 
 class Animal {
     fazerSom() {
-      return 'Som genérico';
+        return 'Som genérico';
     }
-  }
-  
-  class Cachorro extends Animal {
+}
+
+class Cachorro extends Animal {
     fazerSom() {
-      return 'Latido';
+        return 'Latido';
     }
-  }
-  
-  class Gato extends Animal {
+}
+
+class Gato extends Animal {
     fazerSom() {
-      return 'Miado';
+        return 'Miado';
     }
-  }
-  
-  const animais = [new Cachorro(), new Gato()];
-  animais.forEach(animal => console.log(animal.fazerSom()));  
+}
+
+const animais = [new Cachorro(), new Gato()];
+animais.forEach(animal => console.log(animal.fazerSom()));  
