@@ -1,0 +1,1 @@
+Neste projeto, criamos um simples contador de cliques. O JavaScript é usado para manter o registro do número de cliques e atualizar o DOM para refletir a contagem atual.
