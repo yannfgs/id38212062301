@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s;
+}
+
+.tema-escuro {
+    background-color: #333;
+    color: white;
+}
