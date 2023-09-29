@@ -1,0 +1,1 @@
+<!-- Estes projetos cobrem várias funcionalidades básicas do JavaScript junto com HTML e CSS. Os comentários em cada linha explicam o que cada parte do código faz, o que deve ajudá-lo a entender como eles interagem entre si em um projeto real. -->
