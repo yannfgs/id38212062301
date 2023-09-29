@@ -1,0 +1,1 @@
+Neste projeto, criamos uma lista de tarefas básica. O JavaScript é usado para criar novos elementos DOM e atualizar a lista, enquanto o HTML e o CSS estruturam e estilizam a página.
