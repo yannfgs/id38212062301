@@ -13,6 +13,7 @@ body {
     flex-direction: column;
 }
 
-input, button {
+input,
+button {
     margin: 5px;
 }

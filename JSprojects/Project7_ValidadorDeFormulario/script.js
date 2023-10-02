@@ -1,4 +1,4 @@
-document.getElementById('meuFormulario').addEventListener('submit', function(e) {
+document.getElementById('meuFormulario').addEventListener('submit', function (e) {
     e.preventDefault(); // Previne a submissão padrão do formulário
 
     const nome = document.getElementById('nome').value; // Obtém o valor do campo nome
