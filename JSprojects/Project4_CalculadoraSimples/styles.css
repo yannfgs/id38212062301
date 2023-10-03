@@ -1,9 +1,16 @@
 body {
-    font-family: Arial, sans-serif; /* Define a fonte do corpo */
-    display: flex; /* Define o tipo de display como flexível */
-    flex-direction: column; /* Define a direção do layout como coluna */
-    align-items: center; /* Centraliza os itens no eixo transversal */
-    justify-content: center; /* Centraliza os itens no eixo principal */
-    height: 100vh; /* Define a altura como 100% da altura da viewport */
-    background-color: #f0f0f0; /* Define a cor de fundo */
+    font-family: Arial, sans-serif;
+    /* Define a fonte do corpo */
+    display: flex;
+    /* Define o tipo de display como flexível */
+    flex-direction: column;
+    /* Define a direção do layout como coluna */
+    align-items: center;
+    /* Centraliza os itens no eixo transversal */
+    justify-content: center;
+    /* Centraliza os itens no eixo principal */
+    height: 100vh;
+    /* Define a altura como 100% da altura da viewport */
+    background-color: #f0f0f0;
+    /* Define a cor de fundo */
 }
