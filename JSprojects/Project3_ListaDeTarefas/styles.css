@@ -6,6 +6,7 @@ body {
     padding-top: 50px;
 }
 
-input, button {
+input,
+button {
     margin: 5px;
 }
