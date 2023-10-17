@@ -5,4 +5,4 @@
 // Cria um novo elemento p e adiciona ao body
 const paragrafo = document.createElement('p');
 paragrafo.textContent = 'Novo parágrafo';
-document.body.appendChild(paragrafo;)
+document.body.appendChild(paragrafo);
