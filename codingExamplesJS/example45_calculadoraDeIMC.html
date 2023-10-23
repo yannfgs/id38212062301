@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC com JavaScript</title>
+</head>
+<body>
+    <input type="number" id=""peso" placeholder="Peso em kg">
+    <input type="number" id="altura" placeholder="Altura em m">
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p id="resultadoIMC"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para calcular o Índice de Massa Corporal (IMC)
+        function calcularIMC() {
+            var peso = parseFloat(document.getElementById("peso").value);
+            var altura = parseFloat(document.getElementById("altura").value)
+            var imc = peso / (altura * altura);
+            document.getElementById("resultadoIMC").innerText = "Seu IMC é:" + imc.toFixed(2);
+        }
+    </script>
+</body>
+</html>
