@@ -13,3 +13,10 @@ let id: string | number; // Define id como uma variável que pode ser tanto 'str
 id = "1234"; // Atribui uma string a 'id'.
 id = 1234; // Atribui um número a 'id'.
 
+// 'Alias de tipo' em TypeScript permite criar um nome para qualquer tipo.
+
+type StringOuNumero = string | number; // Cria um alias 'StringOuNumero' para o tipo 'string | number'.
+let valor: StringOuNumero; // Usa o alias do tipo criado anteriormente.
+valor = "123"; // Atribui uma string a 'valor.
+valor = 123; // Atribui um número a 'valor'.
+
