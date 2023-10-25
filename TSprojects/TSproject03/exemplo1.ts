@@ -20,3 +20,12 @@ let valor: StringOuNumero; // Usa o alias do tipo criado anteriormente.
 valor = "123"; // Atribui uma string a 'valor.
 valor = 123; // Atribui um número a 'valor'.
 
+// O modificador 'readonly' permite criar propriedades de objeto ou elementos de array que não podem ser alterados.
+
+interface Configuracao { // Define uma nova interface chamada 'Configuracao'.
+    readonly url: string; // Define 'url' como uma propriedade que não pode ser modificada após a criação do objeto.
+    readonly porta?: number; // Definr 'porta' como uma propriedade opcional que não pode ser modificada após a criação do objeto.
+}
+
+let carro: [string, number]; // Define 'carro' como uma tupla que contém uma 'string' e um 'number'
+carro = ["Civic", 2022]; // Atribui valores à tupla.
