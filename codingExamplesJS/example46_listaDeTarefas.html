@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas com JavaScript</title>
+</head>
+
+<body>
+    <input type="text" id="novaTarefa" placeholder="Adicione uma tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <ul id="listaTarefas"></ul>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para adicionar uma nova tarefa à lista
+        function adicionarTarefa() {
+            var tarefa = document.getElementById("novaTarefa").value;
+            if (tarefa.trim() === '') {
+                alert('Por favor, insira uma tarefa válida!');
+                return;
+            }
+            var li = document.createElement("li");
+            li.textContent = tarefa;
+            document.getElementById("listaTarefas").appendChild(li);
+            document.getElementById("novaTarefa").value = '';
+        }
+    </script>
+</body>
+
+</html>
