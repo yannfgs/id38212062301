@@ -12,7 +12,7 @@ function mover() {
     meuElemento.style.left = pos + 'px';
 
     if (pos < 300) {
-        requestAnimationFrame(mover)/
+        requestAnimationFrame(mover)
     }
 }
 
