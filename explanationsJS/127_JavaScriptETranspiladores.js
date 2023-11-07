@@ -7,13 +7,12 @@
 // Babel pode converter isso para uma função construtora que é amplamente suportada.
 
 class MinhaClasse {
-    constructor(nome) {
-      this.nome = nome;
-    }
+  constructor(nome) {
+    this.nome = nome;
   }
-  
-  // O código transpilado pelo Babel se parecerá com:
-  // function MinhaClasse(nome) {
-  //   this.nome = nome;
-  // }
-  
+}
+
+// O código transpilado pelo Babel se parecerá com:
+// function MinhaClasse(nome) {
+//   this.nome = nome;
+// }
