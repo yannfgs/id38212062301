@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Saída com JavaScript</title>
+</head>
+<body>
+    <!-- Conteúdo da página -->
+    <p>Se você tentar sair desta página, um alerta será exibido.</p>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para exibir um alerta quando o usuário tenta sair da página
+        window.onbeforeunload = function() {
+            return "Você tem certeza de que deseja sair?";
+        };
+    </script>
+</body>
+</html>
