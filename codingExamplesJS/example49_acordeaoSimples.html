@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeão Simples com JavaScript</title>
+    <style>
+        /* Estilos para o acordeão */
+        .conteudoAcordeao {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="acordeao">Seção 1</button>
+    <div class="conteudoAcordeao">
+        <p>Conteúdo da Seção 1.</p>
+    </div>
+
+    <button class="acordeao">Seção 2</button>
+    <div>
+        <p>Conteúdo da Seção 2.</p>
+    </div>
+
+    <button class="acordeao">Seção 3</button>
+    <div>
+        <p>Conteúdo da Seção 3.</p>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+        let acordeoes = document.getElementsByClassName("acordeao");
+        let i;
+
+        // Loop para adicionar evento de clique em cada botão de acordeão
+        for (i = 0; i < acordeoes.length; i++) {
+            acordeoes[i].addEventListener("click", function () {
+                /* Alternar entre adicionar e remover a classe "ativo", para destacar o botão que controla o painel */
+                this.classList.toggle("ativo");
+
+                /* Alternar entre esconder e mostrar o conteúdo do acordeão */
+                let conteudo = this.nextElementSibling;
+                if (conteudo.style.display === "block") {
+                    conteudo.style.display = "none";
+                } else {
+                    conteudo.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
