@@ -19,7 +19,10 @@
                 alert('Por favor, insira um item válido!');
                 return;
             }
-            
+            var li = document.createElement("li");
+            li.textContent = item;
+            document.getElementById("listaDeCompras").appendChild(li);
+            document.getElementById("itemDeCompra").value = '';
         }
     </script>
 </body>
