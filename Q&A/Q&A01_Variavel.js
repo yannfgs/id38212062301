@@ -1,6 +1,6 @@
 /*
 
-Pergunta 1: O que é uma variável em JavaScript e como você pode declará-la?
+-- Pergunta 1: O que é uma variável em JavaScript e como você pode declará-la?
 
 Uma variável em JavaScript é usada para armazenar dados que podem ser manipulados durante a execução do programa. Existem três palavras-chave para declarar uma variável: `var`, `let` e `const`.
 
