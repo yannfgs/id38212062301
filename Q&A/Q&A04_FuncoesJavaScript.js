@@ -11,3 +11,8 @@ function saudar(nome) {
 }
 
 saudar("Yann"); // Chama a função 'saudar' com o argumento "Yann"
+
+
+// function saudar(nome) {…} define uma função chamada saudar que aceita um parâmetro nome.
+
+// Dentro do bloco de código {}, a função executa uma ação (neste caso, imprime uma saudação no console).
