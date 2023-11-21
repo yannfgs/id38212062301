@@ -17,3 +17,8 @@ let pessoa = {
 
 console.log(pessoa.nome); // Acessa a propriedade 'nome' do objeto 'pessoa'
 pessoa.falar(); // Chama o método 'falar' do objeto 'pessoa'
+
+
+// let pessoa = {…} declara um objeto chamado pessoa.
+// nome: "Yann" e idade: 30 são propriedades do objeto.
+// falar: function() {…} é um método do objeto.
