@@ -10,7 +10,7 @@ Em JavaScript, um objeto é uma coleção de propriedades, e uma propriedade é 
 let pessoa = {
     nome: "Yann",
     idade: 30,
-    falar: function() {
+    falar: function () {
         console.log("Olá, meu nome é " + this.nome); // Usa 'this.nome' para acessar a propriedade 'nome' do objeto
     }
 };
