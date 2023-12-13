@@ -10,8 +10,7 @@ Estruturas condicionais são usadas para realizar diferentes ações com base em
 let idade = 20;
 
 if (idade >= 18) {
-    console.log("Você é maior de idade.") // Esta linha é executada se 'idade' for maior ou igual a 18
+  console.log("Você é maior de idade."); // Esta linha é executada se 'idade' for maior ou igual a 18
 } else {
-    console.log("Você é menor de idade,") // Esta linha é executada se 'idade' for menor que 18
+  console.log("Você é menor de idade,"); // Esta linha é executada se 'idade' for menor que 18
 }
-
