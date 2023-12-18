@@ -43,7 +43,7 @@ console.log(somarNumeros(1, 2, 3, 4)); // Exibe: 10.
 // 'Arrow functions' mantêm o contexto de 'this' do código que as contém, diferentemente das funções tradicionais.
 
 class Botao {
-  constructor(public texto: string) {} // Define uma propriedade 'texto' e a inicializa através do construtor.
+  constructor(public texto: string) { } // Define uma propriedade 'texto' e a inicializa através do construtor.
   clique = () => {
     // Define uma 'arrow function' para o método 'clique'.
     console.log(`Botão clicado: ${this.texto}`); // Exibe o texto do botão. 'this' refere-se à instância da classe 'Botao'.
