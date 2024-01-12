@@ -3,6 +3,7 @@
 // Suponha que temos o seguinte HTML:
 // <div id="meuDiv">Olá, mundo!</div>
 
+
 let div = document.getElementById("meuDiv"); // obtém o elemento com o id "meuDiv"
 console.log(div.textContent); // Olá, mundo!
 
