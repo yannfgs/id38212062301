@@ -1,5 +1,6 @@
 // A Fetch API fornece uma interface para buscar recursos (incluindo recursos entre origens) na rede. É uma maneira mais poderosa e flexível de recuperar recursos do que as técnicas mais antigas, como o `XMLHttpRequest`.
 
+
 fetch('https://api.exemplo.com/dados')
 .then(response => response.json())
 .then(data => console.log(data))
