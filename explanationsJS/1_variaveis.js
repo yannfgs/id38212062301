@@ -9,6 +9,7 @@ Características:
 - Permite reatribuição de valores
 - Tem escopo de bloco. Isso significa que uma variávei definida dentro de um bloco (por exemplo, dentro de um loop ou uma condição) não será acessível fora desse bloco.
 
+
 */
 
 // Exemplo:
