@@ -2,6 +2,7 @@
 
 // Promises podem ser encadeadas para executar tarefas assíncronas em sequência.
 
+
 fetch("https://api.exemplo.com/dados")
   .then((response) => response.json())
   .then((data) => {
