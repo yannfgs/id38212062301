@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora Simples em JavaScript</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Entradas para os números e botões para executar operações -->
-    <input type="number" id="firstNumber" placeholder="Digite o primeiro número" />
+    <input
+      type="number"
+      id="firstNumber"
+      placeholder="Digite o primeiro número"
+    />
     <!-- Campo para inserir o primeiro número -->
-    <input type="number" id="secondNumber" placeholder="Digite o segundo número" />
+    <input
+      type="number"
+      id="secondNumber"
+      placeholder="Digite o segundo número"
+    />
     <!-- Campo para inserir o segundo número -->
     <button onclick="calculate('add')">Adicionar</button>
     <!-- Botão para adicionar adição -->
@@ -24,40 +31,39 @@
 
     <!-- Script JavaScript -->
     <script>
-        // Função para realizar cálculos básicos
-        function calculate(operation) {
-            var firstNumber = parseFloat(
-                document.getElementById("firstNumber").value
-            ); // Obtém o valor do primeiro número
-            var secondNumber = parseFloat(
-                document.getElementById("secondNumber").value
-            ); // Obtém o valor do segundo número
-            var result;
+      // Função para realizar cálculos básicos
+      function calculate(operation) {
+        var firstNumber = parseFloat(
+          document.getElementById("firstNumber").value
+        ); // Obtém o valor do primeiro número
+        var secondNumber = parseFloat(
+          document.getElementById("secondNumber").value
+        ); // Obtém o valor do segundo número
+        var result;
 
-            // Determina a operação a ser executada
-            switch (operation) {
-                case "add":
-                    result = firstNumber + secondNumber; // Soma os dois números
-                    break;
-                case "subtract":
-                    result = firstNumber - secondNumber; // Subtrai os dois números
-                    break;
-                case "multiply":
-                    result = firstNumber * secondNumber; // Multiplica os dois números
-                    break;
-                case "divide":
-                    if (secondNumber !== 0) {
-                        // Verifica se o divisor não é zero
-                        result = firstNumber / secondNumber; // Divide os dois números
-                    } else {
-                        result = "Erro: Divisão por zero!"; // Mensagem de erro para divisão por zero
-                    }
-                    break;
+        // Determina a operação a ser executada
+        switch (operation) {
+          case "add":
+            result = firstNumber + secondNumber; // Soma os dois números
+            break;
+          case "subtract":
+            result = firstNumber - secondNumber; // Subtrai os dois números
+            break;
+          case "multiply":
+            result = firstNumber * secondNumber; // Multiplica os dois números
+            break;
+          case "divide":
+            if (secondNumber !== 0) {
+              // Verifica se o divisor não é zero
+              result = firstNumber / secondNumber; // Divide os dois números
+            } else {
+              result = "Erro: Divisão por zero!"; // Mensagem de erro para divisão por zero
             }
-
-            document.getElementById("result").innerText = "Resultado " + result; // Exibe o resultado
+            break;
         }
-    </script>
-</body>
 
+        document.getElementById("result").innerText = "Resultado " + result; // Exibe o resultado
+      }
+    </script>
+  </body>
 </html>
