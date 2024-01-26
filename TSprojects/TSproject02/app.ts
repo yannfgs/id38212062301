@@ -1,5 +1,6 @@
 // TypeScript introduz 'enums', que permitem a definição de um conjunto de constantes nomeadas.
 
+
 enum Status { // Define um novo 'enum' chamado 'Status'.
   Ativo, // Primeiro item do 'enum', implicitamente atribuído a 0.
   Inativo, // Segundo item do 'enum', implicitamente atribuído a 1.
