@@ -1,5 +1,6 @@
 // TypeScript oferece 'parâmetros opcionais' em funções, permitindo que certos argumentos sejam opcionais.
 
+
 function criarUsuario(nome: string, idade?: number, email?: string): string {
   // Define 'idade' e 'email' como parâmetros opcionais.
   let usuario = `Nome: ${nome}`; // Inicializa a string de usuário com o nome.
