@@ -6,6 +6,7 @@ Em JavaScript, um objeto é uma coleção de propriedades, e uma propriedade é 
 
 */
 
+
 // Exemplo de um Objeto:
 let pessoa = {
     nome: "Yann",
