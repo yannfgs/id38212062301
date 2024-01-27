@@ -6,6 +6,7 @@ Uma função em JavaScript é um bloco de código projetado para executar uma ta
 
 */
 
+
 function saudar(nome) {
     console.log("Olá, " + nome + "!"); // Concatena e exibe a mensagem com o nome
 }
