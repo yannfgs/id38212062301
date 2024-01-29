@@ -1,7 +1,8 @@
 // TypeScript permite a criação de 'tipos genéricos', proporcionando maior reutilização do código e manutenção da tipagem.
 
-function retornarArray<T>(elementos: T[]): T[] { // Função genérica que aceita um array de qualquer tipo e retorna um array do mesmo tipo.
-    return elementos; // Retorna o array de elementos do tipo genérico T.
+function retornarArray<T>(elementos: T[]): T[] {
+  // Função genérica que aceita um array de qualquer tipo e retorna um array do mesmo tipo.
+  return elementos; // Retorna o array de elementos do tipo genérico T.
 }
 
 let numeros = retornarArray<number>([1, 2, 3]); // Utiliza a função genérica com o tipo 'number'.
@@ -22,9 +23,10 @@ valor = 123; // Atribui um número a 'valor'.
 
 // O modificador 'readonly' permite criar propriedades de objeto ou elementos de array que não podem ser alterados.
 
-interface Configuracao { // Define uma nova interface chamada 'Configuracao'.
-    readonly url: string; // Define 'url' como uma propriedade que não pode ser modificada após a criação do objeto.
-    readonly porta?: number; // Definr 'porta' como uma propriedade opcional que não pode ser modificada após a criação do objeto.
+interface Configuracao {
+  // Define uma nova interface chamada 'Configuracao'.
+  readonly url: string; // Define 'url' como uma propriedade que não pode ser modificada após a criação do objeto.
+  readonly porta?: number; // Definr 'porta' como uma propriedade opcional que não pode ser modificada após a criação do objeto.
 }
 
 let carro: [string, number]; // Define 'carro' como uma tupla que contém uma 'string' e um 'number'
