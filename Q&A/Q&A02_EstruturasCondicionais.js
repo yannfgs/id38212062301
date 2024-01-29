@@ -6,6 +6,7 @@ Estruturas condicionais são usadas para realizar diferentes ações com base em
 
 */
 
+
 // Vamos ver um exemplo
 let idade = 20;
 
