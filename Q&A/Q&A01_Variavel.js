@@ -10,6 +10,7 @@ Uma variável em JavaScript é usada para armazenar dados que podem ser manipula
 
 */
 
+
 // Aqui está um exemplo de como declarar variáveis:
 let nome = "Yann"; // Declara uma variável chamada 'nome' e atribui a ela a string "Yann"
 const ANO = 2023; // Declara uma constante chamada 'ANO' e atribui a ela o valor 2023
