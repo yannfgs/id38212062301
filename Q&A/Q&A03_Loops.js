@@ -6,6 +6,7 @@ Loops são usados para executar repetidamente um bloco de código enquanto uma c
 
 */
 
+
 // Exemplo com for:
 for (let i = 0; i < 5; i++) {
     console.log(i); // Este código exibe os números de 0 a 4 no console
