@@ -1,5 +1,6 @@
 // TypeScript permite a criação de 'tipos genéricos', proporcionando maior reutilização do código e manutenção da tipagem.
 
+
 function retornarArray<T>(elementos: T[]): T[] {
   // Função genérica que aceita um array de qualquer tipo e retorna um array do mesmo tipo.
   return elementos; // Retorna o array de elementos do tipo genérico T.
