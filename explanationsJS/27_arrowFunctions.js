@@ -8,7 +8,6 @@ let squares = arr.map(x => x * x);
 console.log(squares); // [1, 4, 9, 16, 25]
 
 
-
 // As Arrow Functions são uma forma simplificada e mais concisa de escrever funções em JavaScript. Elas foram introduzidas na versão ES6 da linguagem e oferecem uma sintaxe mais enxuta e legível para a criação de funções anônimas.
 
 // Ao invés de utilizar a palavra-chave "function", as Arrow Functions utilizam uma seta (=>) para indicar a definição da função. Além disso, elas possuem algumas características especiais, como a ausência de um objeto "this" próprio e a capacidade de retornar valores de forma implícita.
