@@ -2,7 +2,6 @@
 
 // Web Components são um conjunto de APIs da Web que permitem criar novas tags HTML personalizadas, reutilizáveis e encapsuladas.
 
-
 // Definindo um novo componente web que é um botão com um contador
 class BotaoContador extends HTMLElement {
     constructor() {
