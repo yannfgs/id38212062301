@@ -2,6 +2,7 @@
 
 // `localStorage` e `sessionStorage` permitem armazenar dados no navegador do usuário, sendo que `localStorage` persiste mesmo após o navegador ser fechado, enquanto `sessionStorage` é limpo após o fechamento.
 
+
 // Armazena um item no localStorage
 localStorage.setItem('nome', 'João');
 console.log(localStorage.getItem('nome'));  // João
