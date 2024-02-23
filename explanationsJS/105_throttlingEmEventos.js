@@ -2,6 +2,7 @@
 
 // Throttling é uma técnica que garante que uma função seja chamada no máximo uma vez em um determinado período de tempo, útil para limitar a taxa de execução de uma função.
 
+
 let contador = 0;
 const button = document.getElementById('button');
 
