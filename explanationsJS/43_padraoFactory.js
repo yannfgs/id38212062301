@@ -2,7 +2,6 @@
 
 //  O padrão Factory é um padrão de design que permite criar objetos sem especificar a classe exata do objeto que será criado.
 
-
 class Gato {
     falar() {
         return "Miau!";
