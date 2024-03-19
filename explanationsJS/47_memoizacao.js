@@ -4,6 +4,7 @@
 
 // A memoização é uma técnica de otimização usada para acelerar programas armazenando os resultados de chamadas de função caras e retornando o resultado em cache quando as mesmas entradas ocorrem novamente.
 
+
 function memoize(fn) {
     const cache = {};
     return (...args) => {
