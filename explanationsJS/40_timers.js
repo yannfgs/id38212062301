@@ -3,6 +3,7 @@
 // Os timers permitem executar código após um intervalo de tempo específico ou em intervalos regulares.
 
 // Executa após 2 segundos
+
 setTimeout(() => {
     console.log("2 segundos se passaram");
 }, 2000);
