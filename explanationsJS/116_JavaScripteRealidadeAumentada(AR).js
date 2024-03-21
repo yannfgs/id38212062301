@@ -6,6 +6,7 @@
 // Este é um exemplo de marcação HTML usando A-Frame, e não um script JavaScript típico.
 // Deve ser colocado dentro de um arquivo HTML.
 
+
 // <html>
 //   <head>
 //     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
