@@ -2,6 +2,7 @@
 
 // AOP é um paradigma de programação que permite a separação de preocupações transversais em programas, como logging, segurança, etc.
 
+
 function executar(funcao, ...parametros) {
     console.log(`Executando ${funcao.name}`);
     return funcao(...parametros);
