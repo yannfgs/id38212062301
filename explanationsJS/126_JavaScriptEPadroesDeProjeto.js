@@ -2,7 +2,6 @@
 
 // Padrões de projeto são soluções reutilizáveis para problemas comuns em desenvolvimento de software. Um exemplo é o padrão Singleton.
 
-
 // Implementação básica do padrão Singleton em JavaScript
 class Singleton {
     constructor() {
