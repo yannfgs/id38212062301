@@ -4,6 +4,7 @@
 
 
 // O código abaixo usa a sintaxe de classe do ES6, que não é suportada em navegadores mais antigos.
+
 // Babel pode converter isso para uma função construtora que é amplamente suportada.
 
 class MinhaClasse {
