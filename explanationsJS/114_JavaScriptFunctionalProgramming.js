@@ -2,7 +2,6 @@
 
 // Programação funcional em JavaScript envolve o uso de funções puras, funções de alta ordeem e imutabilidade.
 
-
 // Função pura
 function somar(a, b) {
     return a + b;
