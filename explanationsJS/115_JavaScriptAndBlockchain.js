@@ -4,6 +4,7 @@
 
 
 // Exemplo usando a biblioteca ethers.js para interagir com a blockchain Ethereum
+
 const { ethers } = require("ethers");
 
 async function consultarSaldo() {
