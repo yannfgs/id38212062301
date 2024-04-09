@@ -7,7 +7,6 @@ console.log(a); // 1
 console.log(b); // 2
 console.log(c); // 3
 
-
 let {nome, idade} = {nome: 'João', idade: 25};
 console.log(nome); // João
 console.log(idade); // 25
