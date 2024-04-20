@@ -1,6 +1,5 @@
 // Promises são uma maneira de lidar com operações assíncronas em JavaScript. Async/await é uma sintaxe que permite que você trabalhe com Promises de uma maneira mais confortável.
 
-
 let promise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("Promessa cumprida!");
