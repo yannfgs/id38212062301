@@ -2,7 +2,6 @@
 
 // A programação funcional é um paradigma de programação que trata a computação como a avaliação de funções matemáticas e evita mudar o estado e dados mutáveis.
 
-
 const somar = (a, b) => a + b;
 const subtrair = (a, b) => a - b;
 
