@@ -2,7 +2,6 @@
 
 // Os Web Workers permitem executar código JavaScript em segundo plano, em uma thread separada da principal, evitando que a interface do usuário fique bloqueada.
 
-
 // arquivo: worker.js
 self.addEventListener('message', function (e) {
     self.postMessage(e.data);
