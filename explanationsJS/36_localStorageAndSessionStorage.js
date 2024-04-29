@@ -2,7 +2,6 @@
 
 // O Local Storage e o Session Storage são mecanismos de armazenamento na Web que permitem salvar pares chave-valor em um navegador da web.
 
-
 // Local Storage
 localStorage.setItem('nome', 'João');
 console.log(localStorage.getItem('nome')); // João
