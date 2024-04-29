@@ -2,7 +2,6 @@
 
 // A internacionalização é o processo de desenvolver produtos de forma que possam ser facilmente adaptados para vários idiomas e regiões
 
-
 let valor = 123456.78;
 
 // Exibir o valor como moeda nos EUA
