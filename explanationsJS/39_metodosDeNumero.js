@@ -2,7 +2,6 @@
 
 // Os números em JavaScript também têm métodos úteis.
 
-
 let numero = 123.456;
 
 console.log(numero.toFixed(2));         // "123.46"
