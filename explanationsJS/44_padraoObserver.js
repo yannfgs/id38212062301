@@ -1,6 +1,5 @@
 // Padrão Observer
 
-
 class Observado {
     constructor() {
         this.observadores = [];
