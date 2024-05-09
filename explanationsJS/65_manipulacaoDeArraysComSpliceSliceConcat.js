@@ -7,5 +7,6 @@
 const arr = [1, 2, 3, 4, 5];
 
 arr.splice(1, 2); // remove elementos começando do índice 1 e remove 2 elementos
+
 const novoArr = arr.slice(1, 3); // cria um novo array a partir do índice 1 até o índice 3 (não incluso)
 const concatenado = arr.concat([6, 7, 8]); // concatena dois arrays
