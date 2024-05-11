@@ -2,7 +2,6 @@
 
 // `WeakMap` e `WeakSet` são variações de `Map` e `Set` que permitem apenas referências fracas, o que significa que eles não impedem que os objetos referenciados sejam coletados como lixo.
 
-
 let weakMap = new WeakMap();
 let obj = {};
 weakMap.set(obj, "algum valor");
