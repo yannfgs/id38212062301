@@ -2,7 +2,6 @@
 
 // O objeto `Proxy` é usado para definir comportamentos personalizados para operações fundamentais (como pesquisa de propriedades). `Reflect` é um objeto embutido que fornece métodos para operações de objeto interceptáveis.
 
-
 const alvo = {};
 const manipulador = {
     get: function (obj, prop) {
