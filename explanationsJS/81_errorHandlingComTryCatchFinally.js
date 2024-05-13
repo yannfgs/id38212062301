@@ -2,7 +2,6 @@
 
 // O bloco try permite testar um bloco de código para erros. O bloco catch permite manipular o erro, e o bloco finally permite executar código, após try e catch, independentemente do resultado. 
 
-
 try {
     throw new Error('Um erro ocorreu');
 } catch (erro) {
