@@ -1,6 +1,7 @@
 let intervalo; // Variável que armazenará o intervalo de tempo
 let tempo = 0; // Variável que armazenará o tempo
 
+
 function iniciar() { // Define a função iniciar
     clearInterval(intervalo); // Limpa o intervalo anterior, se houver
     intervalo = setInterval(function() { // Define um novo intervalo
