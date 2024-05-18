@@ -2,6 +2,7 @@
 
 // A desestruturação é uma maneira conveniente de extrair valores de arrays ou propriedades de objetos.
 
+
 const [a, b] = [1, 2];
 console.log(a, b); // 1 2
 
