@@ -4,6 +4,7 @@
 
 // Definindo um novo componente web que é um botão com um contador
 
+
 class BotaoContador extends HTMLElement {
     constructor() {
       super();
