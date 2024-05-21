@@ -2,7 +2,6 @@
 
 // Transpiladores como Babel permitem que você use recursos do JavaScript moderno que ainda não são suportados em todos os navegadores.
 
-
 // O código abaixo usa a sintaxe de classe do ES6, que não é suportada em navegadores mais antigos.
 
 // Babel pode converter isso para uma função construtora que é amplamente suportada.
