@@ -2,6 +2,7 @@
 
 // JavaScript não é usado apenas para web, mas também em dispositivos IoT, como com a plataforma Johnny-Five para robótica e IoT.
 
+
 // Código usando Johnny-Five para ler dados de um sensor de temperatura
 const { Board, Thermometer } = require("johnny-five");
 const board = new Board();
