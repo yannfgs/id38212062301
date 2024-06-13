@@ -2,6 +2,7 @@
 
 // O Destructuring é uma maneira conveniente de extrair valores de arrays ou propriedades de objetos em suas próprias variáveis.
 
+
 let [a, b, c] = [1, 2, 3];
 console.log(a); // 1
 console.log(b); // 2
