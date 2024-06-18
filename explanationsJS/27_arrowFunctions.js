@@ -2,7 +2,6 @@
 
 // Arrow functions são uma nova sintaxe para funções introduzidas no ES6. Elas são especialmente úteis para funções de callback e funções que você dseja ter um `this` vinculado ao contexto de criação.
 
-
 let arr = [1, 2, 3, 4, 5];
 let squares = arr.map(x => x * x);
 console.log(squares); // [1, 4, 9, 16, 25]
