@@ -2,6 +2,7 @@
 
 // Os métodos `some` e `every` são utilizados para testar elementos em um array. O método `some` retorna `true` se pelo menos um elemento satisfizer a condição, enquanto `every` retorna `true` se todos os elementos satisfizerem a condição.
 
+
 const array = [1, 2, 3, 4, 5];
 
 const algumMaiorQue3 = array.some(num => num > 3);
