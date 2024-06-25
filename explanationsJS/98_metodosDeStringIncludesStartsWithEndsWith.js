@@ -2,6 +2,7 @@
 
 // Estes métodos são utilizados para verificar a presença de uma substring dentro de uma string.
 
+
 const texto = 'Olá, mundo!';
 
 console.log(texto.includes('Olá')); // true
