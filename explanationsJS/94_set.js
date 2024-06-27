@@ -2,6 +2,7 @@
 
 // O objeto `Set` é uma coleção de valores únicos.
 
+
 const conjunto = new Set();
 conjunto.add(1);
 conjunto.add(2);
