@@ -2,6 +2,7 @@
 
 // O JavaScript permite que você "capture" erros que ocorrem durante a execução do programa usando a estrutura try/catch.
 
+
 try {
     let a = 10;
     let b = 0;
