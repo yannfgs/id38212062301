@@ -11,7 +11,6 @@ Características:
 
 */
 
-
 // Exemplo:
 let nome = "Pedro";
 console.log(nome); // Saída: Pedro
