@@ -2,7 +2,6 @@
 
 // A contagem de arrays se inicia no 0, portanto a posição 1 do array é o segundo elemento.
 
-
 let numeros = [1, 2, 3, 4, 5];
 console.log(numeros[0]); // 1
 
