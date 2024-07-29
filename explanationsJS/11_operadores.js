@@ -1,5 +1,6 @@
 // JavaScript tem vários tipos de operadores, incluindo operadores aritméticos, de comparação e lógicos.
 
+
 let a = 10;
 let b = 20;
 
