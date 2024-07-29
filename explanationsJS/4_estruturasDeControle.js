@@ -1,5 +1,6 @@
 // JavaScript tem várias estruturas de controle, como if, for e while.
 
+
 let numero = 10;
 
 if (numero > 5) {
