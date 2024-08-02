@@ -1,6 +1,5 @@
 // Template strings são uma maneira de criar strings que podem incluir expressões JavaScript.
 
-
 let nome = "João";
 let idade = 25;
 
