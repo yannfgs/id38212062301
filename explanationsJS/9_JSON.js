@@ -1,5 +1,6 @@
 // JSON (JavaScript Object Notation) é um formato de dados que é comumente usado para transferir dados em aplicações web. Em JavaScript, você pode converter entre objetos JavaScript e strings JSON usando `JSON.stringfy` e `JSON.parse`.
 
+
 let pessoa = {
     nome: "João",
     idade: 25
