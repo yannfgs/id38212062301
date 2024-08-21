@@ -2,7 +2,6 @@
 
 // Debouncing é uma prática para minimizar o número de vezes que uma função específica é executada ao longo do tempo, especialmente útil em situações como a digitação do usuário.
 
-
 let contador = 0;
 const inputData = document.getElementById('inputData');
 
