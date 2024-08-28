@@ -11,6 +11,7 @@ let pessoa = {
   }
 };
 
+
 console.log(pessoa.nomeCompleto); // "João Silva"
 pessoa.nomeCompleto = "Maria Oliveira";
 console.log(pessoa.primeiroNome); // "Maria"
