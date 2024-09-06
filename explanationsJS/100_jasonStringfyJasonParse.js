@@ -2,6 +2,7 @@
 
 // `JSON.stringify` converte um objeto JavaScript em uma string JSON, enquanto `JSON.parse` faz o oposto, convertendo uma string JSON em um objeto JavaScript.
 
+
 const obj = { nome: "João", idade: 30 };
 
 // Converte o objeto em uma string JSON
