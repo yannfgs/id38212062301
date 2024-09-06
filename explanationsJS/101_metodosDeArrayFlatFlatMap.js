@@ -2,6 +2,7 @@
 
 // `flat` retorna um novo array que é uma versão achatada do array original, até a profundidade especificada. flatMap funciona como um map seguido por um flat de profundidade 1.
 
+
 const arr1 = [1, 2, [3, 4]];
 
 // Aplana o array em um nível
